@@ -7,6 +7,7 @@
   
 </head>
 <body>
+    
     <div class="full-page">
         <div class="navbar">
             
@@ -20,7 +21,7 @@
             </nav>
         </div>
 
-
+        <form action="ControllerLogin.jsp">
         <div id='login-form'class='login-page'>
             <div class="form-box">
                 <div class='button-box'>
@@ -34,6 +35,9 @@
 		    <input type='checkbox'class='check-box'><span>Remember Password</span>
 		    <button type='submit'class='submit-btn' style="color:white ;">Log in</button>
 		 </form>
+        </form>
+
+        <form action="ControllerRegister.jsp">
 		 <form id='register' class='input-group-register'>
 		     <input type='text'class='input-field'placeholder='First Name' name='FirstName' required >
 		     <input type='text'class='input-field'placeholder='Last Name ' name='LastName' required >
@@ -45,6 +49,7 @@
 		     <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
                     <button type='submit'class='submit-btn'style="color:white ;">Register</button>
 	         </form>
+            </form>
             </div>
         </div>
     </div>
@@ -75,5 +80,6 @@
             }
         }
     </script>
+    </form>
 </body>
 </html>
