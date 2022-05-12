@@ -9,9 +9,7 @@
 <body>
     <div class="full-page">
         <div class="navbar">
-            <div>
-                <a href='website.html'>Tasty Food</a>
-            </div>
+            
             <nav>
                 <ul id='MenuItems'>
                     <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
@@ -27,23 +25,25 @@
             <div class="form-box">
                 <div class='button-box'>
                     <div id='btn'></div>
-                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
-                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                    <button type='button'onclick='login()'class='toggle-btn' style="color:white ;">Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn' style="color:white ;">Register</button>
                 </div>
                 <form id='login' class='input-group-login'>
                     <input type='text'class='input-field'placeholder='Email' name='Email'required >
 		    <input type='password'class='input-field'placeholder='Enter Password' name='Password' required>
 		    <input type='checkbox'class='check-box'><span>Remember Password</span>
-		    <button type='submit'class='submit-btn'>Log in</button>
+		    <button type='submit'class='submit-btn' style="color:white ;">Log in</button>
 		 </form>
 		 <form id='register' class='input-group-register'>
-		     <input type='text'class='input-field'placeholder='First Name' name='FirstName' required>
-		     <input type='text'class='input-field'placeholder='Last Name ' name='LastName' required>
-		     <input type='email'class='input-field'placeholder='Email' name='Email' required>
+		     <input type='text'class='input-field'placeholder='First Name' name='FirstName' required >
+		     <input type='text'class='input-field'placeholder='Last Name ' name='LastName' required >
+		     <input type='email'class='input-field'placeholder='Email' name='Email' required >
 		     <input type='password'class='input-field'placeholder='Enter Password' name='Password' required>
 		     <input type='password'class='input-field'placeholder='Confirm Password'  name='ConfirmPassword' required>
+             <input type='text'class='input-field'placeholder='Home Address' name='HomeAddress' required >
+             <input type='date'class='input-field'placeholder='Date Of Birth' name='DOB' required >
 		     <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
-                    <button type='submit'class='submit-btn'>Register</button>
+                    <button type='submit'class='submit-btn'style="color:white ;">Register</button>
 	         </form>
             </div>
         </div>
