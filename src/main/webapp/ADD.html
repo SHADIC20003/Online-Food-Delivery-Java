@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin LogIn</title>
+    <title>ADD</title>
     <link rel="stylesheet" href="LogIn.css">
     <!---we had linked our css file----->
 </head>
@@ -12,7 +12,7 @@
            
             <nav>
                 <ul id='MenuItems'>
-                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Add</button></li>
                 </ul>
             </nav>
         </div>
@@ -25,10 +25,14 @@
                    
                 </div>
                 <form id='login' class='input-group-login'>
-                    <input type='text'class='input-field'placeholder='Email' name='Email'required >
-		    <input type='password'class='input-field'placeholder='Enter Password' name='Password' required>
-		    <input type='checkbox'class='check-box'><span>Remember Password</span>
-		    <button type='submit'class='submit-btn' style="color:white ;">Log in</button>
+                    <input type='text'class='input-field'placeholder='DishName ' name='DishName 'required >
+		    <input type='text'class='input-field'placeholder='DishPrice ' name='DishPrice ' required>
+            <input type='text'class='input-field'placeholder='DishDescription' name='DishDescription' required>
+            <input type='text'class='input-field'placeholder='DishPicture' name='DishPicture' required>
+            <input type='text'class='input-field'placeholder='DishDeliveryTime' name='DishDeliveryTime' required>
+
+		    
+		    <button type='submit'class='submit-btn' style="color:white ;">ADD</button>
 		 </form>
 		 
         </div>
