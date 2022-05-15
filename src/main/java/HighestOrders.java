@@ -43,6 +43,8 @@ public class HighestOrders {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        PrintWriter out = response.getWriter();
+
         String DishName;
         int DishPrice;
         String DishDescription;
@@ -67,6 +69,7 @@ public class HighestOrders {
                 DishPicture = rs.getString("DishPicture");
                 DishDeliveryTime = rs.getString("DishDeliveryTime");
             }
+            out.println("");
 
         } catch (Exception e) {
             System.err.println("Exception: " + e.getMessage());

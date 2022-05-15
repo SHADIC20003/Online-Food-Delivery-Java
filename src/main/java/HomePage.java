@@ -142,6 +142,7 @@ public class HomePage {
                         + "</div>\r\n"
                         + "        </div>");
             }
+
             out.println("</div>\r\n"
                     + "    </div>\r\n"
                     + "    \r\n"
