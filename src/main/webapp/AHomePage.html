@@ -2,58 +2,48 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"
         <title>Admin Dashboard</title>
         <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <link rel="stylesheet" href="AHomePage.css"
     </head>
 <body>
+
+    <input type="checkbox" id="nav-toggle">
     <div class="sidebar">
         <div class="sidebar-brand">
-            <h1><span class="lab la-accusoft"></span>Tasty Food</h1>
+            <h2><span class="lab la-accusoft"></span><span>Tasty Food</span></h2>
         </div>
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <a href="" ckass="active"><span class="las la-igloo"></span>
+                    <a href="" class="active"><span class="las la-igloo"></span>
                         <span>Dashboard</span></a>
                 </li>
 
                 <li>
                     <a href=""><span class="las la-users"></span>
-                        <span>Customers</span></a>
+                        <span>ADD</span></a>
                 </li>
 
                 <li>
                     <a href=""><span class="las la-clipboard-list"></span>
-                        <span>Projects</span></a>
+                        <span>Delete</span></a>
                 </li>
 
                 <li>
                     <a href=""><span class="las la-shopping-bag"></span>
-                        <span>Orders</span></a>
+                        <span>Update</span></a>
                 </li>
 
-                <li>
-                    <a href=""><span class="las la-receipt"></span>
-                        <span>Inventory</span></a>
-                </li>
-
-                <li>
-                    <a href=""><span class="las la-user-circle"></span>
-                        <span>Accounts</span></a>
-                </li>
-                
-                <li>
-                    <a href=""><span class="las la-clipboard-list"></span>
-                        <span>Tasks</span></a>
-                </li>
+               
             </ul>
         </div>
     </div>
     <div class="main-content">
         <header>
           <h1>
-            <label for="">
+            <label for="nav-toggle">
                 <span class="las la-bars">
                     
                 </span>
@@ -137,6 +127,7 @@
                         </div>
 
                         <div class="card-body">
+                           <div class="table-responsive">
                             <table width="100%">
                                 <thread>
                                     <tr>
@@ -150,7 +141,7 @@
                                         <td>UI/UX Design</td>
                                         <td>UI Team</td>
                                         <td>
-                                            <span class="status"></span>
+                                            <span class="status purple"></span>
                                             review
                                         </td>
                                     </tr>
@@ -158,7 +149,7 @@
                                         <td>Web development</td>
                                         <td>Frontend</td>
                                         <td>
-                                            <span class="status"></span>
+                                            <span class="status pink"></span>
                                             in progress
                                         </td>
                                     </tr>
@@ -166,12 +157,66 @@
                                         <td>Ushop app</td>
                                         <td>Mobile Team</td>
                                         <td>
-                                            <span class="status"></span>
+                                            <span class="status orange"></span>
                                             pending
                                         </td>
                                     </tr>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>UI/UX Design</td>
+                                            <td>UI Team</td>
+                                            <td>
+                                                <span class="status purple"></span>
+                                                review
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Web development</td>
+                                            <td>Frontend</td>
+                                            <td>
+                                                <span class="status pink"></span>
+                                                in progress
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ushop app</td>
+                                            <td>Mobile Team</td>
+                                            <td>
+                                                <span class="status orange"></span>
+                                                pending
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>UI/UX Design</td>
+                                            <td>UI Team</td>
+                                            <td>
+                                                <span class="status purple"></span>
+                                                review
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Web development</td>
+                                            <td>Frontend</td>
+                                            <td>
+                                                <span class="status pink"></span>
+                                                in progress
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ushop app</td>
+                                            <td>Mobile Team</td>
+                                            <td>
+                                                <span class="status orange"></span>
+                                                pending
+                                            </td>
+                                        </tr>
+
                                 </tbody>
                             </table>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -188,14 +233,14 @@
 
                         <div class="card-body">
                             <div class="customer">
-                                <div>
-                                    <img src="" width="40px" height="40px" alt="">
+                                <div class="info">
+                                    <img src="https://cdn.discordapp.com/attachments/788194864198189066/975448327724363826/82133d60-357e-45cf-b13f-99ac42cea4c4.jpg" width="40px" height="40px" alt="">
                                 <div>
                                     <h4>Abdelrahman Ahmed</h4>
                                     <small>CEO Excepert</small>
                                 </div>
                                 </div>
-                                <div>
+                                <div class="contact">
                                     <span class="las la-user-circle"></span>
                                     <span class="las la-comment"></span>
                                     <span class="las la-phone"></span>
@@ -203,14 +248,14 @@
                             </div>
 
                             <div class="customer">
-                                <div>
-                                    <img src="" width="40px" height="40px" alt="">
+                                <div class="info">
+                                    <img src="https://cdn.discordapp.com/attachments/975450390688583730/975462151101771796/WhatsApp_Image_2022-05-15_at_8.17.42_PM.jpeg" width="40px" height="40px" alt="">
                                 <div>
                                     <h4>Abdelrahman Mohamed</h4>
                                     <small>CEO Excepert</small>
                                 </div>
                                 </div>
-                                <div>
+                                <div class="contact">
                                     <span class="las la-user-circle"></span>
                                     <span class="las la-comment"></span>
                                     <span class="las la-phone"></span>
@@ -218,14 +263,14 @@
                             </div>
 
                             <div class="customer">
-                                <div>
-                                    <img src="" width="40px" height="40px" alt="">
+                                <div class="info">
+                                    <img src="https://cdn.discordapp.com/attachments/975446588845596802/975447126756700230/IMG_1854.jpg" width="40px" height="40px" alt="">
                                 <div>
                                     <h4>Omar Abdelnasser</h4>
                                     <small>CEO Excepert</small>
                                 </div>
                                 </div>
-                                <div>
+                                <div class="contact">
                                     <span class="las la-user-circle"></span>
                                     <span class="las la-comment"></span>
                                     <span class="las la-phone"></span>
@@ -233,14 +278,14 @@
                             </div>
 
                             <div class="customer">
-                                <div>
-                                    <img src="" width="40px" height="40px" alt="">
+                                <div class="info">
+                                    <img src="https://cdn.discordapp.com/attachments/975450390688583730/975461598854541392/FB_IMG_1652637024995.jpg" width="40px" height="40px" alt="">
                                 <div>
                                     <h4>Dina Adel</h4>
                                     <small>CEO Excepert</small>
                                 </div>
                                 </div>
-                                <div>
+                                <div class="contact">
                                     <span class="las la-user-circle"></span>
                                     <span class="las la-comment"></span>
                                     <span class="las la-phone"></span>
