@@ -25,11 +25,12 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.ResultSet;
 
-public class UpdateItem extends HttpServlet {
+public class HighestOrders {
     private static final long serialVersionUID = 1L;
 
-    public UpdateItem() {
+    public HighestOrders() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -42,21 +43,30 @@ public class UpdateItem extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String Name = request.getParameter("Name");
-        int Price = Integer.parseInt(request.getParameter("Price"));
-
+        String DishName;
+        int DishPrice;
+        String DishDescription;
+        String DishPicture;
+        String DishDeliveryTime;
         Connection con = null;
         try {
 
             Class.forName("org.apache.derby.jdbc.ClientDriver").newInstance();
             con = DriverManager.getConnection("jdbc:derby://localhost:1527/OnlineFoodOrder", "root", "root");
 
-            String UpdateDish = "Update Dish set DishPrice = ?   where DishName ='?'; ";
-            PreparedStatement pstmt = con.prepareStatement(UpdateDish);
+            String LowestOrder = "select * FROM (Select from Dish Order by NumberOfOrders ASC)  where rownum <= 1;";
 
-            pstmt.setInt(1, Price);
-            pstmt.setString(2, Name);
-            int Deletenum = pstmt.executeUpdate();
+            PreparedStatement pstmt = con.prepareStatement(LowestOrder);
+
+            ResultSet rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                DishName = rs.getString("DishName");
+                DishPrice = rs.getInt("DishName");
+                DishDescription = rs.getString("DishDescription");
+                DishPicture = rs.getString("DishPicture");
+                DishDeliveryTime = rs.getString("DishDeliveryTime");
+            }
 
         } catch (Exception e) {
             System.err.println("Exception: " + e.getMessage());
@@ -68,4 +78,5 @@ public class UpdateItem extends HttpServlet {
             }
         }
     }
+
 }
